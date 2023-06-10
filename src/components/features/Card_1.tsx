@@ -22,12 +22,12 @@ const features = [
 
 const Card_1 = () => {
   return (
-    <div className="flex items-center border border-secondary/50 rounded-md w-[55%] my-[13px]">
-      <div className="w-[50%] p-16">
-        <div className='bg-[#495aeb] rounded-xl p-2 w-max'>
+    <div className="flex min-[992px]:flex-row flex-col-reverse items-center border border-secondary/50 rounded-md max-w-[1150px] min-[1230px]:mx-auto mx-6 my-[13px]">
+      <div className="min-[992px]:w-[50%] min-[992px]:p-16 p-5">
+        <div className='bg-[#495aeb] rounded-xl p-2 w-max max-[991px]:mx-auto'>
           <Image src={feat_icon} alt="feature icon"/>
         </div>
-        <h3 className="text-[32px] font-semibold mt-6">
+        <h3 className="min-[992px]:text-[32px] text-xl text-center min-[992px]:text-left font-semibold mt-6">
           Get up and running 
           <br/>
           in minutes
@@ -44,7 +44,7 @@ const Card_1 = () => {
           </div>
         ))}
       </div>
-      <div className="w-[50%] mx-11">
+      <div className="w-[50%] mx-11 max-[991px]:pt-10">
         <Image src={feat_img} alt="Feature Card 1 Image." className="w-full"/>
       </div>
     </div>

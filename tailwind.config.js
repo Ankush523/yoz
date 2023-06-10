@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'early-access-gradient': "url('https://uploads-ssl.webflow.com/63fdce8de20c75a28b758a56/6437c182a15c9a26ee4830b0_cta-bg%20(2).png')",
-        'feature-1': "url('https://uploads-ssl.webflow.com/63fdce8de20c75a28b758a56/643951bc4e51a3b1771dba35_onchain-notification%20(2).png')"
+        'landing': "url('https://uploads-ssl.webflow.com/63fdce8de20c75a28b758a56/6437c0a1f2f4a80d711a09a5_yoz-bg2.svg')"
       },
       colors: {
         primary: '#111012',

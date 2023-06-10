@@ -10,4 +10,127 @@
 body {
   color: var(--foreground-hex);
   background-color: var(--background-hex);
+  background-image: "url('https://uploads-ssl.webflow.com/63fdce8de20c75a28b758a56/6437c0a1f2f4a80d711a09a5_yoz-bg2.svg')";
+}
+
+.card {
+	width: 65%;
+	height: auto;
+	animation: onTop 12s 2s ease infinite;
+  margin: 0 auto;
+}
+.card.one {
+	left: 0;
+	top: 0;
+	z-index: 2;
+	animation-name: onTop;
+}
+.card.two {
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+	animation-name: onMiddle;
+}
+.card.three {
+	left: 0px;
+	top: 0px;
+	z-index: 0;
+	animation-name: onBottom;
+}
+
+@keyframes onTop {
+  5% {
+    transform: translateY(-100px);
+    z-index: 1;
+    top: 20px;
+  }
+  10% {
+    transform: translateY(0);
+    z-index: 0;
+    top: 40px;
+  }
+  40% {
+    transform: translateY(0);
+    z-index: 0;
+    top: 40px;
+  }
+  50% {
+    transform: translateY(0);
+    z-index: 1;
+    top: 20px;
+  }
+  70% {
+    transform: translateY(0);
+    z-index: 1;
+    top: 20px;
+  }
+  80% {
+    transform: translateY(0);
+    z-index: 2;
+    top: 0;
+  }
+}
+@keyframes onMiddle {
+  10% {
+    transform: translateY(0);
+    z-index: 2;
+    top: 0;
+  }
+  40% {
+    transform: translateY(0);
+    z-index: 2;
+    top: 0;
+  }
+  45% {
+    transform: translateY(-100px);
+    z-index: 1;
+    top: 20px;
+  }
+  50% {
+    transform: translateY(0);
+    z-index: 0;
+    top: 40px;
+  }
+  70% {
+    transform: translateY(0);
+    z-index: 0;
+    top: 40px;
+  }
+  80% {
+    transform: translateY(0);
+    z-index: 1;
+    top: 20px;
+  }
+}
+@keyframes onBottom {
+  10% {
+    transform: translateY(0);
+    z-index: 0;
+    top: 20px;
+  }
+  40% {
+    transform: translateY(0);
+    z-index: 1;
+    top: 20px;
+  }
+  50% {
+    transform: translateY(0);
+    z-index: 2;
+    top: 0;
+  }
+  70% {
+    transform: translateY(0);
+    z-index: 2;
+    top: 0;
+  }
+  75% {
+    transform: translateY(-100px);
+    z-index: 1;
+    top: 20px;
+  }
+  80% {
+    transform: translateY(0);
+    z-index: 0;
+    top: 40px;
+  }
 }

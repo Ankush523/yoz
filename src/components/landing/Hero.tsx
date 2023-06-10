@@ -1,11 +1,12 @@
+import Notification from "./Notification"
 
 const Hero = () => {
   return (
-    <article className="flex flex-col justify-center items-center w-[33%] min-h-[calc(100vh-75px)] mx-auto">
-        <h1 className="text-4xl text-center font-bold mt-10 mb-8">
+    <article className="flex flex-col justify-center items-center max-w-[650px] min-h-[calc(100vh-75px)] mx-auto">
+        <h1 className="md:text-4xl text-3xl text-center font-bold mx-5 mt-10 mb-8">
             We’re building Web3 notifications so you don’t have to.
         </h1>
-        <h3 className="text-lg text-center text-secondary mx-24 mb-10">
+        <h3 className="text-lg text-center text-secondary min-[480px]:mx-24 mx-5 mb-10">
             Save time, streamline your development, and reach users on their preferred channels
         </h3>
         <div className="bg-early-access-gradient bg-cover text-center rounded-[32px] w-max">
